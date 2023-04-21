@@ -3,8 +3,9 @@
 Pascal Triangle
 """
 
+
 def pascal_triangle(n):
-    """returns a list of lists of intergers representing
+    """Returns a list of lists of intergers representing
     Pascal's triangle"""
     if n <= 0:
         return []
@@ -20,4 +21,5 @@ def pascal_triangle(n):
             else:
                 row.append(1)
         triangle.append(row)
+
     return triangle
