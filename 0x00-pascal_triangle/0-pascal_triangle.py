@@ -11,7 +11,7 @@ def pascal_triangle(n):
         return []
     if n == 1:
         return [1]
-    triangle = [1]
+    triangle = [pascal_triangle(1)]
     for i in range(n - 1):
         row = [1]
         prev_row = triangle[len(triangle) - 1]
