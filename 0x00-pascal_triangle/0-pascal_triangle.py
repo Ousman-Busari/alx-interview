@@ -13,13 +13,14 @@ def pascal_triangle(n):
 
     for row in range(n):
         for col in range(row + 1):
-            if(col < row):
-                if(col == 0):
+            if (col < row):
+                if (col == 0):
                     """ the first column is always set to 1 """
                     triangle[row].append(1)
                 else:
-                    triangle[row].append(triangle[row-1][col - 1] + triangle[row-1][col])
-            elif(col == row):
+                    triangle[row].append(triangle[row-1][col - 1] +
+                                         triangle[row-1][col])
+            elif (col == row):
                 """ the diagonal is always set to 1 """
                 triangle[row].append(1)
 
