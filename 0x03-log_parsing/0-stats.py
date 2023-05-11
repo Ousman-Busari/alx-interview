@@ -14,7 +14,8 @@ if __name__ == "__main__":
         """Print the current stats"""
         print("File size: {}".format(file_size[0]))
         for key in sorted(status_codes_counts.keys()):
-            print("{}: {}".format(key, status_codes_counts[key]))
+            if status_codes_counts[key]:
+                print("{}: {}".format(key, status_codes_counts[key]))
 
     def parse_line(line):
         """checks the line for matches and parses it"""
@@ -44,4 +45,3 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print_stats()
         raise
-    print_stats()
