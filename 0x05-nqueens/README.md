@@ -1,0 +1,4 @@
+## Nqueens
+
+Python\
+Algorithm
