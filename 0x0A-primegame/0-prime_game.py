@@ -3,12 +3,13 @@
 Prime game
 """
 
+
 def isWinner(x, nums):
     """
     Prime number game functions
     Args:
         - x: the number of rounds to be played
-        - nums: 
+        - nums: an aaray
     """
     if x < 1 or not nums:
         return None
