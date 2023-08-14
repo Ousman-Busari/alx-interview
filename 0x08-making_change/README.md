@@ -1,3 +1,0 @@
-##ALX Interview
-Python\
-Algorithm
